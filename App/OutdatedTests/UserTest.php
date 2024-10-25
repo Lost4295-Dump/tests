@@ -1,8 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace App;
+namespace App\OutdatedTests;
 
+use App\User;
 use PHPUnit\Framework\TestCase;
 
 class UserTest extends TestCase
@@ -25,7 +26,7 @@ class UserTest extends TestCase
     public function testIsNotValidWrongDateFormat(){
         $user = new User("john@example.com","john", "Doe", "1584512052000");
         $this->expectException(\Exception::class);
-        $this->assertFalse($user->isValid());
+        $user->isValid();
     }
     public function testIsNotValidTooYoung(){
         $user = new User("john@example.com","john", "Doe", "15-05-2020");

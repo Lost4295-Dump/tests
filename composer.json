@@ -1,6 +1,7 @@
 {
     "require": {
-        "phpunit/phpunit": "^9.6"
+        "phpunit/phpunit": "^9.6",
+        "doctrine/doctrine-bundle": "^2.13"
     },
 
     "autoload" : {
