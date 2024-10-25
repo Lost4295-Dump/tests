@@ -11,6 +11,6 @@
     },
     "scripts": {
         "post-update-cmd": "vendor/bin/phpunit App\\Tests",
-        "test": "vendor/bin/phpunit App\\Tests"
+        "test": "vendor/bin/phpunit App/Tests"
     }
 }
